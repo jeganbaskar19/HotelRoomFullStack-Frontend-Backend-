@@ -1,0 +1,98 @@
+:root {
+  --bg-color: #f0f4ff;
+  --card-color: #ffffff;
+  --primary-color: #005eff;
+  --text-color: #000;
+  --input-bg: #fff;
+  --input-border: #ccc;
+}
+
+/* 🌙 Dark Theme */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: #121212;
+    --card-color: #1e1e1e;
+    --primary-color: #4f9bff;
+    --text-color: #f0f0f0;
+    --input-bg: #2a2a2a;
+    --input-border: #444;
+  }
+}
+
+.register-container {
+  min-height: 100vh;
+  background-color: var(--bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.register-form {
+  background-color: var(--card-color);
+  color: var(--text-color);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  transition: all 0.3s ease;
+}
+
+.register-form h2 {
+  text-align: center;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.register-form input {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid var(--input-border);
+  background-color: var(--input-bg);
+  color: var(--text-color);
+  font-size: 14px;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.register-form input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px rgba(0, 94, 255, 0.2);
+}
+
+.register-form button {
+  padding: 12px;
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.register-form button:hover {
+  background-color: #0041c2;
+}
+
+.register-form p {
+  text-align: center;
+  font-size: 14px;
+}
+
+.register-form a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+@media (max-width: 480px) {
+  .register-form {
+    padding: 1rem;
+    width: 100%;
+  }
+}

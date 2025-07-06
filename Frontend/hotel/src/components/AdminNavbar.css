@@ -1,0 +1,69 @@
+/* AdminNavbar.css */
+
+.admin-navbar {
+  background-color: #1a1a40;
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.admin-logo {
+  font-size: 1.6rem;
+  font-weight: bold;
+  cursor: pointer;
+  user-select: none;
+  color: #00e6e6;
+  transition: transform 0.2s ease;
+}
+
+.admin-logo:hover {
+  transform: scale(1.05);
+  color: #00ffff;
+}
+
+.admin-nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.admin-nav-links li {
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 8px 14px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.admin-nav-links li:hover {
+  background-color: #00e6e6;
+  color: #1a1a40;
+}
+
+/* Responsive (optional for mobile view) */
+@media (max-width: 768px) {
+  .admin-navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .admin-nav-links {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .admin-nav-links li {
+    width: 100%;
+  }
+}

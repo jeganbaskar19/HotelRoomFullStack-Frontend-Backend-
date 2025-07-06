@@ -1,0 +1,171 @@
+.admin-dashboard-container {
+  padding: 30px;
+  max-width: 1100px;
+  margin: auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.admin-header {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.admin-profile {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.admin-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #0077cc;
+}
+
+.admin-placeholder {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 14px;
+}
+
+.admin-info h2 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.admin-info p {
+  margin: 5px 0;
+  font-size: 15px;
+}
+
+.admin-info button {
+  margin-top: 8px;
+  padding: 6px 12px;
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.admin-info button:hover {
+  background-color: #005fa3;
+}
+
+.subtitle {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.dashboard-card {
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.dashboard-card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #0077cc;
+}
+
+.dashboard-card p {
+  font-size: 26px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.dashboard-card.users {
+  border-left: 6px solid #ff6b6b;
+}
+
+.dashboard-card.rooms {
+  border-left: 6px solid #6c5ce7;
+}
+
+.dashboard-card.bookings {
+  border-left: 6px solid #00b894;
+}
+
+.dashboard-card.reviews {
+  border-left: 6px solid #f9ca24;
+}
+.admin-edit-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.admin-edit-form {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.admin-edit-form input {
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.admin-edit-form .btn-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.admin-edit-form button {
+  padding: 8px 14px;
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.admin-edit-form button:hover {
+  background-color: #005fa3;
+}

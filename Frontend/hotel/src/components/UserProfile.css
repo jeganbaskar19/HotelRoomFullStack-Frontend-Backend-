@@ -1,0 +1,99 @@
+.profile-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  color: #333;
+}
+
+.profile-container h2,
+.profile-container h3 {
+  color: #005eff;
+  margin-bottom: 1rem;
+}
+
+.profile-view,
+.profile-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.profile-view button,
+.profile-form button {
+  padding: 0.5rem 1.5rem;
+  background-color: #005eff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.profile-form input {
+  width: 100%;
+  max-width: 400px;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.profile-form button:hover,
+.profile-view button:hover {
+  background-color: #0041c2;
+}
+
+.booking-list {
+  margin-top: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1rem;
+}
+
+.booking-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  background-color: #f9f9f9;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.05);
+}
+
+.booking-card p {
+  margin: 0.3rem 0;
+  font-size: 0.95rem;
+}
+
+.booking-card button {
+  margin-top: 0.5rem;
+  background-color: #005eff;
+  color: white;
+  border: none;
+  padding: 0.4rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.booking-card button:hover {
+  background-color: #003ecb;
+}
+
+/* Dark Mode */
+@media (prefers-color-scheme: dark) {
+  .profile-container {
+    background-color: #1e1e2f;
+    color: #eee;
+  }
+
+  .profile-form input {
+    background-color: #2a2a3d;
+    color: white;
+    border-color: #555;
+  }
+
+  .booking-card {
+    background-color: #2c2c3e;
+    border-color: #444;
+  }
+}
